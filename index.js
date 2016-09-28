@@ -41,12 +41,6 @@ server.use((req,res,next) => {
 
 server.get('/pressreleases', get(PRESS_RELEASES));
 server.get('/speeches', get(SPEECHES));
-server.get('/', (req, res, next) => {
-  const file = fs.readFileSync('./config/1E4EBE3A3D58176C767A799365428804.txt');
-  logger.debug(`Serving: ${file}`);
-  res.send(file);
-});
-
 
 server.listen(8080, function() {
   console.log('%s listening at %s', server.name, server.url);

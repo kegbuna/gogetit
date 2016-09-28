@@ -27,10 +27,7 @@ function get(url) {
   }
 }
 
-const server = restify.createServer({
-  key: fs.readFileSync(SSL_KEY),
-  certificate: fs.readFileSync(SSL_CERT)
-});
+const server = restify.createServer();
 server.use((req,res,next) => {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
@@ -41,7 +38,6 @@ server.use((req,res,next) => {
 
 server.get('/secrss/pressreleases', get(PRESS_RELEASES));
 server.get('/secrss/speeches', get(SPEECHES));
-
 
 server.listen(8080, function() {
   console.log('%s listening at %s', server.name, server.url);

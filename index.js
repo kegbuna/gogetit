@@ -2,10 +2,8 @@ import restify from 'restify';
 import request from 'request';
 import FeedMe from 'feedme';
 import Logger from 'log4js';
-import fs from 'fs';
 
 import { PRESS_RELEASES, SPEECHES } from './config/urls';
-import { SSL_KEY, SSL_CERT } from './config/paths';
 
 const logger = Logger.getLogger('Index');
 

@@ -34,8 +34,8 @@ server.use((req,res,next) => {
 );
 
 
-server.get('/pressreleases', get(PRESS_RELEASES));
-server.get('/speeches', get(SPEECHES));
+server.get('/secrss/pressreleases', get(PRESS_RELEASES));
+server.get('/secrss/speeches', get(SPEECHES));
 
 server.listen(8080, function() {
   console.log('%s listening at %s', server.name, server.url);

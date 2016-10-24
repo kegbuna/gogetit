@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Federal Register",
+    "link": "https://www.osha.gov/pls/oshaweb/federalregister.xml"
+  },
+  {
+    "title": "Interpretations",
+    "link": "https://www.osha.gov/pls/oshaweb/interpretation.xml"
+  },
+  {
+    "title": "Directives",
+    "link": "https://www.osha.gov/pls/oshaweb/directive.xml"
+  },
+  {
+    "title": "News Releases",
+    "link": "https://www.osha.gov/pls/oshaweb/newsRelease.xml"
+  },
+  {
+    "title": "QuickTakes",
+    "link": "https://www.osha.gov/as/opa/quicktakes/quicktakes.xml"
+  }
+]

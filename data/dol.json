@@ -1,0 +1,38 @@
+[
+  {
+    "title": "DOL National News Releases",
+    "link": "https://www.dol.gov/rss/releases.xml"
+  },
+  {
+    "title": "DOL National News Releases en Español",
+    "link": "https://www.dol.gov/rss/spanish.xml"
+  },
+  {
+    "title": "Speeches, Testimony, and More from the Secretary of Labor",
+    "link": "https://www.dol.gov/rss/speeches.xml"
+  },
+  {
+    "title": "The Official Blog of the U.S. Department of Labor",
+    "link": "http://blog.dol.gov/feed/"
+  },
+  {
+    "title": "Photo Galleries from the U.S. Department of Labor",
+    "link": "http://www.dol.gov/rss/photos.xml"
+  },
+  {
+    "title": "YouTube Video from the U.S. Department of Labor",
+    "link": "https://www.youtube.com/feeds/videos.xml?channel_id=UCAiRVU84Si6YHoe8LCn54WA"
+  },
+  {
+    "title": "Congressional Testimony",
+    "link": "https://www.dol.gov/rss/congress.xml"
+  },
+  {
+    "title": "EBSA News Releases",
+    "link": "http://www.dol.gov/ebsa/rss/news.xml"
+  },
+  {
+    "title": "ETA Workforce Investment RSS Feeds",
+    "link": "https://www.doleta.gov/USWORKFORCE/wifeed.cfm"
+  }
+]

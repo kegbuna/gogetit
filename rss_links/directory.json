@@ -1,22 +1,17 @@
 {
   "bls": {
-    "links": "bls.json",
     "title": "Bureau of Labor Statistics"
   },
   "dol": {
-    "links": "dol.json",
     "title": "Department of Labor"
   },
   "fbi": {
-    "links": "fbi.json",
     "title": "Federal Bureau of Investigation"
   },
   "osha": {
-    "links": "osha.json",
     "title": "Occupational Safety and Health Administration"
   },
   "state": {
-    "links": "state.json",
     "title": "State Department"
   }
 }

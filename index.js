@@ -1,4 +1,5 @@
 import restify from 'restify';
+import config from './config.json';
 import * as directoryRoutes from './routes/directory';
 
 const server = restify.createServer();
@@ -13,6 +14,6 @@ server.get('/govreader/directory', directoryRoutes.Get);
 server.get('/govreader/directory/:department', directoryRoutes.Get);
 server.get('/govreader/directory/:department/:feedIndex', directoryRoutes.Get);
 
-server.listen(8080, function() {
+server.listen(config.port, function() {
   console.log('%s listening at %s', server.name, server.url);
 });

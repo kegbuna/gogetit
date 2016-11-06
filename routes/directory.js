@@ -1,9 +1,13 @@
 import FeedMe from 'feedme';
 import request from 'request';
-
 import Logger from 'log4js';
+
+import config from '../config.json';
 const logger = Logger.getLogger('Directory Get');
-logger.setLevel('DEBUG');
+
+logger.setLevel(config.logLevel);
+
+const parser = new FeedMe(true);
 
 import directory from '../rss_links/directory.json';
 import * as directories from '../rss_links/export';
@@ -11,19 +15,18 @@ import * as directories from '../rss_links/export';
 
 export function Get(req, res, next) {
   const department = req.params.department;
+
   const feedIndex = req.params.feedIndex;
 
   logger.debug(`Params: ${JSON.stringify(req.params)}` );
-
   const work = new Promise((resolve, reject) => {
     if (!department) {
       resolve(directory);
     } else if (isNaN(feedIndex)) {
       resolve(directories[department]);
     } else {
-      const url = directories[department][feedIndex].link;
 
-      const parser = new FeedMe(true);
+      const url = directories[department][feedIndex].link;
 
       logger.debug(`Retrieving from ${url}.`);
       request(url)

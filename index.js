@@ -14,6 +14,6 @@ server.get('/govreader/directory', directoryRoutes.Get);
 server.get('/govreader/directory/:department', directoryRoutes.Get);
 server.get('/govreader/directory/:department/:feedIndex', directoryRoutes.Get);
 
-server.listen(config.port, function() {
+server.listen(config.port, () => {
   console.log('%s listening at %s', server.name, server.url);
 });

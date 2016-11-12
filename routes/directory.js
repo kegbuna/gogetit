@@ -25,7 +25,6 @@ export function Get(req, res, next) {
     } else if (isNaN(feedIndex)) {
       resolve(directories[department]);
     } else {
-
       const url = directories[department][feedIndex].link;
 
       logger.debug(`Retrieving from ${url}.`);

@@ -1,17 +1,26 @@
 {
   "bls": {
-    "title": "Bureau of Labor Statistics"
+    "title": "Bureau of Labor Statistics",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Bureau_of_labor_statistics_logo.svg"
   },
   "dol": {
-    "title": "Department of Labor"
+    "title": "Department of Labor",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/0/07/USDOL_Seal_circa_2015.svg"
   },
   "fbi": {
-    "title": "Federal Bureau of Investigation"
+    "title": "Federal Bureau of Investigation",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/d/da/Seal_of_the_Federal_Bureau_of_Investigation.svg"
   },
   "osha": {
-    "title": "Occupational Safety and Health Administration"
+    "title": "Occupational Safety and Health Administration",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/44/US-OSHA-Logo.svg"
+  },
+  "sec": {
+    "title": "Securities and Exchange Commission",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/5/54/United_States_Securities_and_Exchange_Commission.svg"
   },
   "state": {
-    "title": "State Department"
+    "title": "State Department",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Seal_of_the_United_States_Department_of_State.svg"
   }
 }

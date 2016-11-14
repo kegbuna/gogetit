@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Press Releases",
+    "link": "https://www.sec.gov/rss/news/press.xml"
+  },
+  {
+    "title": "Speeches",
+    "link": "https://www.sec.gov/rss/news/speech.xml"
+  },
+  {
+    "title": "Litigation Releases",
+    "link": "https://www.sec.gov/rss/litigation/litreleases.xml"
+  },
+  {
+    "title": "Administrative Proceedings",
+    "link": "https://www.sec.gov/rss/litigation/admin.xml"
+  },
+  {
+    "title": "Trading Suspensions",
+    "link": "https://www.sec.gov/rss/litigation/suspensions.xml"
+  },
+  {
+    "title": "Proposed Rules",
+    "link": "https://www.sec.gov/rss/rules/proposed.xml"
+  },
+  {
+    "title": "Division of Corporation Finance What's New",
+    "link": "https://www.sec.gov/rss/divisions/corpfin/cfnew.xml"
+  },
+  {
+    "title": "Division of Investment Management News",
+    "link": "https://www.sec.gov/rss/divisions/investment/imnews.xml"
+  },
+  {
+    "title": "Investor Alerts and Bulletins",
+    "link": "https://www.sec.gov/rss/investor/alertsandbulletins.xml"
+  }
+]

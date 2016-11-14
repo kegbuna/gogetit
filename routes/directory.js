@@ -3,17 +3,16 @@ import request from 'request';
 import Logger from 'log4js';
 
 import config from '../config.json';
+import directory from '../rss_links/directory.json';
+import * as directories from '../rss_links/export';
+
 const logger = Logger.getLogger('Directory Get');
 
 logger.setLevel(config.logLevel);
 
 const parser = new FeedMe(true);
 
-import directory from '../rss_links/directory.json';
-import * as directories from '../rss_links/export';
-
-
-export function Get(req, res, next) {
+export default function Get(req, res) {
   const department = req.params.department;
 
   const feedIndex = req.params.feedIndex;
@@ -35,16 +34,12 @@ export function Get(req, res, next) {
           reject(err);
         });
 
-      parser.on('end', data => {
+      parser.on('end', () => {
         const results = parser.done();
         resolve(results);
-      })
+      });
     }
   });
 
-  work.then(result => {
-    res.send(result);
-  }).catch(err => {
-    res.send(500, err);
-  })
+  work.then(result => res.send(result)).catch(err => res.send(500, err));
 }
